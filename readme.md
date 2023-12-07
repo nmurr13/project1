@@ -1,18 +1,17 @@
-## Description on Project
+##  Unit 1 Project: Build a Trivia Game
 
-A paragraph discussing the idea of your project, the API you are using and desired user experience.
-
-> I am creating a perfume maker, we generate list of perfume ingredient using the items from the perfume ingredient api. Users will select ingredients and generate an imaginary perfume.
+I am creating a two player 20 question trivia game where players can alternate turns and track their score. The game will be about hockey, and using a Headless CMS, I have created a custom dataset with my questions and answers, and I will access it through the API on the Contentful website and create a web application for mobile phones and browsers.
 
 ## Details about the API
 
-Give me a brief description of the API you are using and how you plan on using it. Does it use some sort of authentication like an APIkey. List some of the urls are using below.
+I am using contentful to host the data for my game and I will access it via API-Key and render it to the page using JS.
 
-- `https://www.perfumeapi.com/ingredients`: This returns a json array with all the different ingedients
+- `https://cdn.contentful.com/`: This returns a json array with all the different ingedients.
 
 Sample Fetch/Ajax called:
+
 ```js
-const url = "https://www.perfumeapi.com/ingredients"
+const url = "https://cdn.contentful.com/spaces/f9ludc6g4f0p/environments/master/entries/1TH00D0RqYW0BoSmfJusZP?access_token=zvuk1r8PGmzjJxJn6UqY-NhSv2uaYbM4aPj46yiJGQI"
 fetch(url)
 .then((res) => res.json())
 .then((data) => console.log(data))
@@ -20,60 +19,31 @@ fetch(url)
 
 The Data I get back:
 ```json
-[
-  {
-    "ingredient": "Bergamot",
-    "description": "A citrus fruit with a bright, uplifting scent."
+[{
+  metadata: { tags: [] },
+  sys: {
+    space: { sys: [Object] },
+    id: '1TH00D0RqYW0BoSmfJusZP',
+    type: 'Entry',
+    createdAt: '2023-12-06T23:41:43.748Z',
+    updatedAt: '2023-12-06T23:41:43.748Z',
+    environment: { sys: [Object] },
+    revision: 1,
+    contentType: { sys: [Object] },
+    locale: 'en-US'
   },
-  {
-    "ingredient": "Lavender",
-    "description": "A flowering plant with a calming, relaxing scent."
-  },
-  {
-    "ingredient": "Rose",
-    "description": "A flowering plant with a romantic, feminine scent."
-  },
-  {
-    "ingredient": "Jasmine",
-    "description": "A flowering plant with an exotic, sensual scent."
-  },
-  {
-    "ingredient": "Sandalwood",
-    "description": "A woody plant with a warm, earthy scent."
-  },
-  {
-    "ingredient": "Patchouli",
-    "description": "A herb with a deep, musky scent."
-  },
-  {
-    "ingredient": "Vanilla",
-    "description": "A spice with a sweet, gourmand scent."
-  },
-  {
-    "ingredient": "Amber",
-    "description": "A fossilized resin with a warm, balsamic scent."
-  },
-  {
-    "ingredient": "Musk",
-    "description": "An animal secretion with a sensual, musky scent."
-  },
-  {
-    "ingredient": "Oud",
-    "description": "A type of agarwood with a dark, mysterious scent."
-  }
+  fields: { questions: 'What year was the first NHL Season?' }
 ]
 
 ## Mockup
 
-Here put a mix of text explanation plus a picture giving us an idea of the layout of your website.
-
 #### Desktop View
 
-![My Desktop View](https://i.imgur.com/5Bs7N6B.png)
+![My Desktop View] visual mockup coming soon
 
 #### Mobile View
 
-![My Mobile View](https://i.imgur.com/5Bs7N6B.png)
+![My Mobile View] visual mockup coming soon.
 
 DEPLYOYED SITE: [Click Here](https://project1-kwk9calwz-nicholas-murrays-projects.vercel.app)
 
@@ -81,11 +51,11 @@ DEPLYOYED SITE: [Click Here](https://project1-kwk9calwz-nicholas-murrays-project
 
 |Day | Goal | What I did accomplish |
 |----|------|-----------------------|
-| Sat | Create Readme, Deploy, Get Approval | |
-| Sun | Build fetch of data in JS file ||
-| Mon | Render data from API on screen ||
-| Tues| Build form for user to interact with ||
-| Wed | wrap up functionality ||
+| Sat | Create Readme, Deploy, Get Approval | | Tested various public API's to no avail. 
+| Sun | Build fetch of data in JS file || Watched many of Alex's videos and planned my project. 
+| Mon | Render data from API on screen || Watched many of Alex's videos and planned my project. 
+| Tues| Build form for user to interact with || Signed up for contentful and wrote my trivia questions.
+| Wed | wrap up functionality || Sent read me, Deployed website, built a fetch of data and rendered it in node and the brower. Building interactive form now.
 |Thurs| mobile layout styling ||
 | Fri | Desktop layout styling ||
 | Sat | Present Project ||
