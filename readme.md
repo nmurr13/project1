@@ -4,7 +4,8 @@ I am creating a two player 20 question trivia game where players can alternate t
 
 ## Details about the API
 
-I am using contentful to host the JSON data for my game and I will access via API-Key and the fetch method and render it to the page using a map function to create an are of objects.
+I am using contentful to host the question model for my game and I will access via API-Key and the fetch method and render it to the JSON DATA using a map function to create an array of objects that I can increment through and access all of the relevant
+values inside.
 
 
 ##Sample Fetch/Ajax called:
@@ -26,3 +27,4 @@ The Data I get back:
 
 DEPLYOYED SITE: [Click Here](https://project1-nicholas-murrays-projects.vercel.app/)
 
+ 
