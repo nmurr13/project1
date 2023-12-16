@@ -1,3 +1,20 @@
 body{
+    display: flex;
+    flex-wrap: wrap;
     font-family: 'Rubik', sans-serif;
+    color: gold;
+    background-color: black;
 }
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 10px solid gold;
+  }
+  @media (max-width: 480px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+  

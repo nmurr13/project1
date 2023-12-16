@@ -14,7 +14,8 @@ function populateQuestion(questionObject) {
 
 	const answerOneElement = document.querySelector(".answer1");
 	answerOneElement.textContent = questionObject.correctAnswers;
-	
+	answerOneElement.addEventListener("click", checkRadioButton);
+
 	const answerTwoElement = document.querySelector(".answer2");
 	answerTwoElement.textContent = questionObject.wrongAnswers;
 
@@ -31,3 +32,17 @@ function populateQuestion(questionObject) {
         console.log(currentQuestionIndex);
          };
 }
+
+function checkRadioButton() {
+    if (document.getElementById('radioButton').checked) {
+        player1.innerText = parseInt(player2.innerText) + 1
+    }
+    else {
+        player2.innerText = parseInt(player2.innerText) + 1
+    }
+  }
+
+  
+  $('footer').prepend('<img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Boston_Bruins.svg/226px-Boston_Bruins.svg.png">')
+
+   

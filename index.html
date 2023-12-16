@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Hockey Trivia App</title>
+    <title>Nick Murray's Hockey Trivia App Project</title>
     <script
     src="https://code.jquery.com/jquery-3.7.1.js"
     integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
@@ -13,19 +13,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAiodEAIB8jAAAAAAAixP8A////ACKOtwAiuO8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIiIjEREyIiIiIxEREREyIiIxREEURBMiIxMUQRRBMTIhQRERETMUEjFEERMxEUQTEURGFEARRBERERYRERERERERFhEREREREURGFEURRBExRBETMRFEEyFBERERMxQSIxMUQRRBMTIiMURBFEQTIiIjERERETIiIiIjEREyIiL4HwAA4AcAAMADAACAAQAAgAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIABAACAAQAAwAMAAOAHAAD4HwAA" rel="icon" type="image/x-icon">
 </head>
+<header class="title">
+    <h1>Nick Murray's Hockey Trivia App Project</h1>
+    <p>A two player quiz game where players can alternate turns by selecting the radio button and track their score</p>
+</header>
 <body>
-    <div id="container">
+    <div class="container">
         <div class="question">
-            <p class="question-title">Question will go here</p>
+            <h1 class="question-title">Question will go here</h1>
             <button class="answer answer1">Answer 1</button>
             <button class="answer answer2">Answer 2</button>
             <button id="nextQuestion">Next Question</button>
+            <label><input type="radio" id="radioButton" name="players" value="HTML"> Player One</label>
+            <input type="radio" id="radioButton2" name="players" value="HTML"> Player Two</label>
+
+            
         </div>
         <div class="scoreboard">
-            <div id="player1">Player 1 Score:</div>
-            <div id="player2">Player 2 Score:</div>
+            <h2>Player 1 Score:<div id="player1">0</div> </h2>
+            <h2>Player 2 Score: <div id="player2">0</div> </h2>
+
         </div>
     </div>
+    <footer></footer>
 </body>
 </html>
